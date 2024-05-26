@@ -1,0 +1,18 @@
+@startuml "Diagrama de secuencia"
+
+actor Cliente_1
+actor Cliente_2
+actor Cliente_n
+participant Servidor
+database "Archivo JSON" as JSON
+
+Cliente_1 -> Servidor: 'nombre_usuario'
+Servidor -> Cliente_1: 'unico'
+Cliente_1 -> Servidor: 'password'
+Servidor -> Cliente_1: 'correcto'
+Servidor -> JSON: 'pass_encriptada'
+Cliente_1 -> Servidor: 'Mensaje de cliente 1'
+Servidor -> Cliente_2: 'Mensaje de cliente 1'
+Servidor -> Cliente_n: 'Mensaje de cliente 1'
+
+@enduml

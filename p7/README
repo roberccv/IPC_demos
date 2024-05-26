@@ -1,0 +1,19 @@
+Manual de Uso de la aplicación cd Chat
+En primer lugar entre a la carpeta test_chat/ donde se encuentra el códgio definitivo de la práctica
+
+Para ejecutar los tests que comprueban el correcto funcionamiento de los métodos del servidor, ejecutar el siguiente comando
+(Se recomienda haber seguido la guia Install para el correcto funcionamiento):
+
+"python3 test.py"
+
+Para ejecutar la aplicación:
+1º Levantar el servidor con el comando python3 expecificando el puerto:
+    python3 serv7.py <PUERTO>
+
+2º levantar los clientes que quieres que ser comuniquen entre si, especificando su nombre (debe ser único) y el puerto (debe ser el mismo que el que ha usado para levantar el servidor):
+
+    python3 cli7.py <PUERTO> <NOMBRE_USUARIO>
+
+A continuación solicitará una contraseña, si es la primera vez que inicia sesión, cree una contraseña que será guardada y recordada, si ya ha iniciado sesión use la que haya creado previamente.
+
+Puede iniciar tantos clientes como desee.

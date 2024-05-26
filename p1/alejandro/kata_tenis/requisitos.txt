@@ -1,0 +1,11 @@
+Escribe un programa que acepte dos números enteros y los traduzca al puntaje típico del tenis.
+
+Las reglas de puntuación del tenis (según Wikipedia) son las siguientes:
+
+El primer jugador en obtener al menos cuatro puntos en total y al menos dos puntos más que su adversario, gana un juego.
+
+Los puntos de cero a tres son respectivamente denominados ''15'', ''30'', y ''40''.
+
+Si cada jugador gana al menos tres puntos y las puntuaciones son iguales, el resultado es "deuce" o ''iguales''.
+
+Si cada jugador gana al menos tres puntos y un jugador tiene un punto más que su adversario, la puntuación para el jugador que lleva la delantera se denomina "ventaja".

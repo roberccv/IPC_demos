@@ -1,0 +1,6 @@
+#Ignora archivos de mi mac  
+.DS_Store
+
+#Ignora cache
+
+/__pycache__/*

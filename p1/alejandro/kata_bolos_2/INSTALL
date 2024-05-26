@@ -1,0 +1,13 @@
+Manual de instalación, administración y configuración:
+
+Este proyecto consiste en una calculadora de puntuaciones de partidas de bolos.
+
+Pasos para la instalación:
+
+1) Instalar Python en la máquina.
+
+2) Deberá clonar el repositorio mediante el siguiente comando: git clone https://git.eps.ceu.es/ped/ped10 e introducir el usuario y la contraseña.
+
+3) Instalar, si no la tiene, la herramienta make en el sistema operativo.
+
+4) Instalar, si no la tiene, el framework de tests unitarios Pytest mediante el comando: pip install pytest

@@ -1,0 +1,9 @@
+Manual de usuario.
+
+Este proyecto consiste en una calculadora de puntuaciones de partidas de bolos.
+
+Pasos para la utilización:
+
+1. Situarse en el directorio kata_bolos_2
+
+2. Ejecutar el comando make test para correr todos los tests.

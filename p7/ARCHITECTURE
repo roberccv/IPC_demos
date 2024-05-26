@@ -1,0 +1,21 @@
+Manual de arquitectura:
+
+Cli7.py:
+    El cliente primero establece la conexión (con las confirmaciones pertienentes enviadas por el servidor)y después
+    se divide en dos procesos, siendo el proceso padre el encargado de esperar entradas por la terminal y enviar el texto escrito
+    al servidor, y el proceso hijo, que se encarga de recivir los mensajes del servidor 
+
+Serv7.py:
+    El servidor establece la conexión mediante un socket y cuando recive un mensaje de un cliente, lo reenvia al resto de clientes conectados
+    Para que un cliente se conecte, debe pasar primero por un proceso de autentificación:
+        Este proceso de autentificación y conexión de un cliente tiene 3 estados (3 estados por el número de interacciones entre cliente y servidor) para evitar bloqueos y que una autentificación no bloqueé a los clientes:
+    
+        1º -> Inicio de la comunicación y comprobación del nombre de usuario: En este estado el servidor recive el usuario y  comprueba si el usuario ya esta conecado (usando el nombre de usuario para la comprobación), si ya lo esta, rechaza la conexión, y si no lo está, pasa al siguiente estado.
+
+        2º -> Comprobación de la contraseña : En este proceso, el servidor espera una contraseña de parte del cliente y comprueba si esta contraseña coincide con la que ha sido almacenada (cifrada) para el usuario con el que se esta conectando y si nunca se había usado ese usuario, almacena el usuario y la contraseña cifrada para futuras comprobaciones. El registro de usuarios y contraseñas registradas es persistente y se hace mediante un arcvivo JSON.
+        Si falla la comprobación de la contraseña, el cliente es expulsado, en el resto de casos pasaría al siguiente estado
+
+        3º -> La conexión se realiza de forma exitosa por lo que en este estado se realiza la comunicación descrita al inicio.
+
+
+![Imagen del diagrama de secuencia](diagrama.png)

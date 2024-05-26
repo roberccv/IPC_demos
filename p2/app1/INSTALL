@@ -1,0 +1,7 @@
+Manual de instalación, administración y configuración.
+
+Para instalar python en su SO Ubuntu ejecute en la terminal el siguiente comando:
+sudo apt install python3
+
+Para instalar make en su SO Ubuntu ejecute en la terminal el siguiente comando:
+sudo apt install make

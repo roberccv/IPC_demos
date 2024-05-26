@@ -1,0 +1,15 @@
+Manual de instalación, administración y configuración:
+
+Cabe mencionar que el desarrollo de esta aplicación ha sido en una distribucuón Ubuntu
+
+Pasos para la instalación:
+
+1) Instalar Python en la máquina.
+    En nuestro caso: sudo apt install python3
+
+2) Deberá clonar el repositorio mediante el siguiente comando: git clone https://git.eps.ceu.es/ped/ped10 e introducir el usuario y la contraseña.
+
+3) Instalar, si no la tiene, la herramienta make en el sistema operativo.
+    sudo apt install make
+
+4) Instalar, si no la tiene, el framework de tests unitarios Pytest mediante el comando: pip install pytest

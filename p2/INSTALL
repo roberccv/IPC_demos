@@ -1,0 +1,10 @@
+Manual de instalación, administración y configuración.
+
+#Instalas pip  "sudo apt install python3-pip"
+
+Es necesario instalar el paquete de python setproctitle para que el programa sea capaz de renombrar los procesos
+por lo que hay que ejecutar los siguientes comandos en la terminal:
+
+"python3  get-pip.py"
+"pip install setproctitle"
+
